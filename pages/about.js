@@ -1,5 +1,14 @@
 import React from "react";
+import Router from "next/router";
+import Link from "next/link";
 
 export default function About() {
-    return <h1>About page</h1>
+
+    const handleClick = () => Router.push('/')
+
+    return <>
+        About page
+        <button onClick={handleClick}>Home Page Button</button>
+        <Link href={'/'}>Home Page Link</Link>
+    </>
 }
