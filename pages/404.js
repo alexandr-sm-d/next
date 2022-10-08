@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import styles from "../styles/error.module.css"
+import styles from "../styles/error.module.scss"
 import MainLayout from "../layouts/MainLayout";
 
 export default function Error() {
