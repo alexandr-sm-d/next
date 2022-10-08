@@ -1,9 +1,14 @@
 import React from "react";
 import Link from "next/link"
+import Head from "next/head";
 
-export default function MainLayout({children}) {
+export default function MainLayout({children, title = 'Pet-project next.js'}) {
     return (
         <>
+            <Head>
+                <title>{title}</title>
+            </Head>
+
             <nav>
                 <Link href={'about'}><a>About</a></Link>
                 <Link href={'posts'}><a>Posts</a></Link>
