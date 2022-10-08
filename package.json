@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mock": "json-server -w db.json -p 4200 -d 600",
+    "serve": "concurrently \"npm run dev\"  \"npm run mock\""
   },
   "dependencies": {
     "next": "12.3.1",
@@ -15,6 +17,7 @@
     "sass": "^1.55.0"
   },
   "devDependencies": {
+    "concurrently": "^7.4.0",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1"
   }
