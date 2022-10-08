@@ -7,6 +7,7 @@ export default function MainLayout({children, title = 'Pet-project next.js'}) {
         <>
             <Head>
                 <title>{title}</title>
+                <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
             </Head>
 
             <nav>
@@ -19,7 +20,7 @@ export default function MainLayout({children, title = 'Pet-project next.js'}) {
             </main>
 
             <style jsx>
-                {`
+                {`               
                     nav {
                         background: green;
                         display: flex;
