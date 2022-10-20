@@ -11,9 +11,9 @@ export default function MainLayout({children, title = 'Pet-project next.js'}) {
             </Head>
 
             <nav>
-                <Link href={'about'}><a>About</a></Link>
-                <Link href={'posts'}><a>Posts</a></Link>
-                <Link href={'history/details'}><a>Details</a></Link>
+                <Link href={'/about'}><a>About</a></Link>
+                <Link href={'/posts'}><a>Posts</a></Link>
+                <Link href={'/history/details'}><a>Details</a></Link>
             </nav>
             <main>
                 {children}
